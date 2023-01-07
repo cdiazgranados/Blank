@@ -1,0 +1,27 @@
+{
+  "jiveApp": {
+    "directMessage": {
+      "home": {
+        "title": "Direct Messages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Direct Message",
+        "createOrEditLabel": "Create or edit a Direct Message",
+        "notFound": "No Direct Messages found"
+      },
+      "created": "A new Direct Message is created with identifier {{ param }}",
+      "updated": "A Direct Message is updated with identifier {{ param }}",
+      "deleted": "A Direct Message is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Direct Message {{ id }}?"
+      },
+      "detail": {
+        "title": "Direct Message"
+      },
+      "id": "ID",
+      "fromUserId": "From User Id",
+      "toUserId": "To User Id",
+      "user": "User",
+      "message": "Message"
+    }
+  }
+}

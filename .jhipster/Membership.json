@@ -1,0 +1,34 @@
+{
+  "applications": ["Jive"],
+  "changelogDate": "20230107042936",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "membership",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Membership",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "membership",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "message",
+      "otherEntityRelationshipName": "membership",
+      "relationshipName": "message",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "channel",
+      "otherEntityRelationshipName": "membership",
+      "relationshipName": "channel",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}
