@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Message.
+    -->
+    <changeSet id="20230107042122-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="membership_id"
+                                 baseTableName="message"
+                                 constraintName="fk_message__membership_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="membership"/>
+
+        <addForeignKeyConstraint baseColumnNames="channel_id"
+                                 baseTableName="message"
+                                 constraintName="fk_message__channel_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="channel"/>
+
+        <addForeignKeyConstraint baseColumnNames="membership_id"
+                                 baseTableName="message"
+                                 constraintName="fk_message__membership_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="membership"/>
+
+        <addForeignKeyConstraint baseColumnNames="channel_id"
+                                 baseTableName="message"
+                                 constraintName="fk_message__channel_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="channel"/>
+
+        <addForeignKeyConstraint baseColumnNames="direct_message_id"
+                                 baseTableName="message"
+                                 constraintName="fk_message__direct_message_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="direct_message"/>
+    </changeSet>
+</databaseChangeLog>

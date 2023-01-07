@@ -1,0 +1,43 @@
+{
+  "applications": ["Jive"],
+  "changelogDate": "20230107042022",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "channel",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Channel",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "message",
+      "otherEntityRelationshipName": "channel",
+      "relationshipName": "message",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "membership",
+      "otherEntityRelationshipName": "channel",
+      "relationshipName": "membership",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "message",
+      "otherEntityRelationshipName": "channel",
+      "relationshipName": "message",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}
